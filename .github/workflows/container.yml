@@ -20,7 +20,7 @@ jobs:
       - run: npm install
       - run: npm run build
         env:
-          PRODCUTION_DOMAIN: ${{ secrets.PRODUCTION_DOMAIN }}
+          PRODUCTION_DOMAIN: ${{ secrets.PRODUCTION_DOMAIN }}
 
       - uses: chrislennon/action-aws-cli@v1.1
         env:
