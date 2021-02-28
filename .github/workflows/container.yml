@@ -13,10 +13,7 @@ defaults:
 
 jobs:
   build:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [macOS-10.14, windows-2016, ubuntu-18.04]
+    runs-on: macOS-latest
 
     steps:
       - uses: actions/checkout@v2
