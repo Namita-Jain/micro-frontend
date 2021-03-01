@@ -7,7 +7,7 @@ const renderReactDom = () => {
 };
 
 console.log(window.cordova, 'window.cordova');
-if (window.cordova || true) {
+if (window.cordova) {
   document.addEventListener('deviceready', () => {
     renderReactDom();
   }, false);

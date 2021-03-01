@@ -1,25 +1,37 @@
 {
-  "name": "auth",
+  "name": "angularjs-assignment",
   "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "concurrently 'webpack serve --config config/webpack.dev.js' 'json-server --watch database/db.json -p 8000'",
+    "build": "webpack --config config/webpack.prod.js"
   },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "@material-ui/core": "^4.11.0",
-    "@material-ui/icons": "^4.9.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-router-dom": "^5.2.0"
+    "angular": "^1.8.2",
+    "angular-ui-router": "^1.0.28",
+    "angularjs-toast": "^4.0.0",
+    "json-server": "^0.16.3",
+    "ng-ui-router-state-events": "^1.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@babel/plugin-transform-runtime": "^7.12.1",
     "@babel/preset-env": "^7.12.1",
-    "@babel/preset-react": "^7.12.1",
-    "babel-loader": "^8.1.0",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^5.0.0",
+    "concurrently": "^5.3.0",
+    "css-loader": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "html-loader": "^1.3.2",
     "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^1.3.2",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "sass": "^1.30.0",
+    "sass-loader": "^10.1.0",
     "style-loader": "^2.0.0",
     "webpack": "^5.4.0",
     "webpack-cli": "^4.1.0",
